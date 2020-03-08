@@ -140,7 +140,7 @@ public class TestClass {
         String str = divElement.getText();
         System.out.println(str);
 
-        if(str == expectedTitle)
+        if(str.equals(expectedTitle))
         {
             System.out.println("Pass");
         }
