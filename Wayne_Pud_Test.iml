@@ -52,5 +52,15 @@
         <jarDirectory url="file://C:/Selenium-POI/poi-4.1.1/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://C:/Selenium-POI/poi-4.1.1/ooxml-lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://C:/Selenium-POI/poi-4.1.1/ooxml-lib" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>
