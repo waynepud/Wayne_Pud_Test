@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.*;
-
+import org.testng.Assert;
 // Import modules required for Excel
 import java.io.*;
 
@@ -133,7 +133,25 @@ public class TestClass {
         pwinput.sendKeys(list1.get(0)[1]);
         submit.click();
 
+
+        String expectedTitle = "Successfully Logged in...";
+
+        WebElement divElement = driver.findElement(By.className("error-copy"));
+        String str = divElement.getText();
+        System.out.println(str);
+
+        if(str == expectedTitle)
+        {
+            System.out.println("Pass");
+        }
+        else
+        {
+            System.out.println("Fail");
+        }
+
         System.out.println("End Test");
+
+        driver.quit();
 
     }
 }
